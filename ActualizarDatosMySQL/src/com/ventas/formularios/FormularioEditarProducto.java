@@ -23,12 +23,12 @@ public class FormularioEditarProducto extends JFrame {
      * Creates new form FormularioEditarProducto
      */
     public FormularioEditarProducto() {
-        initComponents();
+        this.initComponents();
         this.setTitle("Editar Producto");
         this.setLocationRelativeTo(null);
         this.setExtendedState(3);
     }
-    
+
     public void editarDatos() {
         int filasAfectadas = 0;
         Connection connection = null;
