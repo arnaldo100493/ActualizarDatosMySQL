@@ -33,7 +33,7 @@ public class FormularioEditarProducto extends JFrame {
         int filasAfectadas = 0;
         Connection connection = null;
         Statement statement = null;
-        String sql = "update producto set nombreProducto='" + this.textNuevoNombreProducto.getText() + "' where codigoProducto='" + this.textCodigoProducto.getText() + "';";
+        String sql = "update producto set nombreProducto='" + this.textNuevoNombre.getText() + "' where codigoProducto='" + this.textCodigo.getText() + "';";
         try {
             connection = MySQLConnection.connect();
             statement = (Statement) connection.createStatement();
@@ -63,10 +63,10 @@ public class FormularioEditarProducto extends JFrame {
 
         labelEditarProducto = new javax.swing.JLabel();
         panelDatos = new javax.swing.JPanel();
-        labelCodigoProducto = new javax.swing.JLabel();
-        labelNuevoNombreProducto = new javax.swing.JLabel();
-        textCodigoProducto = new javax.swing.JTextField();
-        textNuevoNombreProducto = new javax.swing.JTextField();
+        labelCodigo = new javax.swing.JLabel();
+        labelNuevoNombre = new javax.swing.JLabel();
+        textCodigo = new javax.swing.JTextField();
+        textNuevoNombre = new javax.swing.JTextField();
         buttonEditarDatos = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
@@ -76,11 +76,11 @@ public class FormularioEditarProducto extends JFrame {
 
         panelDatos.setBorder(javax.swing.BorderFactory.createTitledBorder("Datos del producto"));
 
-        labelCodigoProducto.setFont(new java.awt.Font("Arial", 1, 12)); // NOI18N
-        labelCodigoProducto.setText("Código:");
+        labelCodigo.setFont(new java.awt.Font("Arial", 1, 12)); // NOI18N
+        labelCodigo.setText("Código:");
 
-        labelNuevoNombreProducto.setFont(new java.awt.Font("Arial", 1, 12)); // NOI18N
-        labelNuevoNombreProducto.setText("Nuevo nombre:");
+        labelNuevoNombre.setFont(new java.awt.Font("Arial", 1, 12)); // NOI18N
+        labelNuevoNombre.setText("Nuevo nombre:");
 
         javax.swing.GroupLayout panelDatosLayout = new javax.swing.GroupLayout(panelDatos);
         panelDatos.setLayout(panelDatosLayout);
@@ -89,12 +89,12 @@ public class FormularioEditarProducto extends JFrame {
             .addGroup(panelDatosLayout.createSequentialGroup()
                 .addContainerGap()
                 .addGroup(panelDatosLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(labelCodigoProducto)
-                    .addComponent(labelNuevoNombreProducto))
+                    .addComponent(labelCodigo)
+                    .addComponent(labelNuevoNombre))
                 .addGap(30, 30, 30)
                 .addGroup(panelDatosLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                    .addComponent(textCodigoProducto)
-                    .addComponent(textNuevoNombreProducto, javax.swing.GroupLayout.DEFAULT_SIZE, 180, Short.MAX_VALUE))
+                    .addComponent(textCodigo)
+                    .addComponent(textNuevoNombre, javax.swing.GroupLayout.DEFAULT_SIZE, 180, Short.MAX_VALUE))
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
         panelDatosLayout.setVerticalGroup(
@@ -102,12 +102,12 @@ public class FormularioEditarProducto extends JFrame {
             .addGroup(panelDatosLayout.createSequentialGroup()
                 .addContainerGap()
                 .addGroup(panelDatosLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(labelCodigoProducto)
-                    .addComponent(textCodigoProducto, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(labelCodigo)
+                    .addComponent(textCodigo, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(18, 18, 18)
                 .addGroup(panelDatosLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(labelNuevoNombreProducto)
-                    .addComponent(textNuevoNombreProducto, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(labelNuevoNombre)
+                    .addComponent(textNuevoNombre, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addContainerGap(44, Short.MAX_VALUE))
         );
 
@@ -192,11 +192,11 @@ public class FormularioEditarProducto extends JFrame {
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton buttonEditarDatos;
-    private javax.swing.JLabel labelCodigoProducto;
+    private javax.swing.JLabel labelCodigo;
     private javax.swing.JLabel labelEditarProducto;
-    private javax.swing.JLabel labelNuevoNombreProducto;
+    private javax.swing.JLabel labelNuevoNombre;
     private javax.swing.JPanel panelDatos;
-    private javax.swing.JTextField textCodigoProducto;
-    private javax.swing.JTextField textNuevoNombreProducto;
+    private javax.swing.JTextField textCodigo;
+    private javax.swing.JTextField textNuevoNombre;
     // End of variables declaration//GEN-END:variables
 }

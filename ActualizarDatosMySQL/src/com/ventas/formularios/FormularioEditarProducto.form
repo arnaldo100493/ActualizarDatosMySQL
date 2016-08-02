@@ -79,13 +79,13 @@
               <Group type="102" attributes="0">
                   <EmptySpace max="-2" attributes="0"/>
                   <Group type="103" groupAlignment="0" attributes="0">
-                      <Component id="labelCodigoProducto" alignment="0" min="-2" max="-2" attributes="0"/>
-                      <Component id="labelNuevoNombreProducto" alignment="0" min="-2" max="-2" attributes="0"/>
+                      <Component id="labelCodigo" alignment="0" min="-2" max="-2" attributes="0"/>
+                      <Component id="labelNuevoNombre" alignment="0" min="-2" max="-2" attributes="0"/>
                   </Group>
                   <EmptySpace min="-2" pref="30" max="-2" attributes="0"/>
                   <Group type="103" groupAlignment="0" max="-2" attributes="0">
-                      <Component id="textCodigoProducto" max="32767" attributes="0"/>
-                      <Component id="textNuevoNombreProducto" pref="180" max="32767" attributes="0"/>
+                      <Component id="textCodigo" max="32767" attributes="0"/>
+                      <Component id="textNuevoNombre" pref="180" max="32767" attributes="0"/>
                   </Group>
                   <EmptySpace max="32767" attributes="0"/>
               </Group>
@@ -96,13 +96,13 @@
               <Group type="102" alignment="0" attributes="0">
                   <EmptySpace max="-2" attributes="0"/>
                   <Group type="103" groupAlignment="3" attributes="0">
-                      <Component id="labelCodigoProducto" alignment="3" min="-2" max="-2" attributes="0"/>
-                      <Component id="textCodigoProducto" alignment="3" min="-2" max="-2" attributes="0"/>
+                      <Component id="labelCodigo" alignment="3" min="-2" max="-2" attributes="0"/>
+                      <Component id="textCodigo" alignment="3" min="-2" max="-2" attributes="0"/>
                   </Group>
                   <EmptySpace type="separate" max="-2" attributes="0"/>
                   <Group type="103" groupAlignment="3" attributes="0">
-                      <Component id="labelNuevoNombreProducto" alignment="3" min="-2" max="-2" attributes="0"/>
-                      <Component id="textNuevoNombreProducto" alignment="3" min="-2" max="-2" attributes="0"/>
+                      <Component id="labelNuevoNombre" alignment="3" min="-2" max="-2" attributes="0"/>
+                      <Component id="textNuevoNombre" alignment="3" min="-2" max="-2" attributes="0"/>
                   </Group>
                   <EmptySpace pref="44" max="32767" attributes="0"/>
               </Group>
@@ -110,7 +110,7 @@
         </DimensionLayout>
       </Layout>
       <SubComponents>
-        <Component class="javax.swing.JLabel" name="labelCodigoProducto">
+        <Component class="javax.swing.JLabel" name="labelCodigo">
           <Properties>
             <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
               <Font name="Arial" size="12" style="1"/>
@@ -118,7 +118,7 @@
             <Property name="text" type="java.lang.String" value="C&#xf3;digo:"/>
           </Properties>
         </Component>
-        <Component class="javax.swing.JLabel" name="labelNuevoNombreProducto">
+        <Component class="javax.swing.JLabel" name="labelNuevoNombre">
           <Properties>
             <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
               <Font name="Arial" size="12" style="1"/>
@@ -126,9 +126,9 @@
             <Property name="text" type="java.lang.String" value="Nuevo nombre:"/>
           </Properties>
         </Component>
-        <Component class="javax.swing.JTextField" name="textCodigoProducto">
+        <Component class="javax.swing.JTextField" name="textCodigo">
         </Component>
-        <Component class="javax.swing.JTextField" name="textNuevoNombreProducto">
+        <Component class="javax.swing.JTextField" name="textNuevoNombre">
         </Component>
       </SubComponents>
     </Container>
