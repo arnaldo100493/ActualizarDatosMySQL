@@ -42,7 +42,7 @@ public class FormularioEditarProducto extends JFrame {
             JOptionPane.showMessageDialog(null, "Error SQL: " + ex.getMessage(), "Error", JOptionPane.ERROR_MESSAGE);
         } finally {
             JOptionPane.showMessageDialog(null, "Filas afectadas: " + filasAfectadas);
-            LimpiarComponentes.limpiarComponentes(this.panelDatos);
+            this.limpiar();
             try {
                 statement.close();
                 connection.close();
@@ -50,6 +50,10 @@ public class FormularioEditarProducto extends JFrame {
                 JOptionPane.showMessageDialog(null, "Error: " + ex.getMessage(), "Error", JOptionPane.ERROR_MESSAGE);
             }
         }
+    }
+
+    private void limpiar() {
+        LimpiarComponentes.limpiarComponentes(this.panelDatos);
     }
 
     /**
