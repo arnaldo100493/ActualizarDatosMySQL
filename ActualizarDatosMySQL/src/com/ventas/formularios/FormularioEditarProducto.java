@@ -29,7 +29,7 @@ public class FormularioEditarProducto extends JFrame {
         this.setExtendedState(3);
     }
 
-    public void editarDatos() {
+    private void editarDatos() {
         int filasAfectadas = 0;
         Connection connection = null;
         Statement statement = null;
